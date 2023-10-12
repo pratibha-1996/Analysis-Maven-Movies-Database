@@ -1,6 +1,6 @@
 -- Write a SQL query to count the number of characters except the spaces for each actor. Return first 10 actors name length along with their name.
 Select length(concat(first_name,last_name)) as length, concat(first_name,' ',last_name) as Name
-from actor
+from mavenmovies.actor
 order by length desc
 limit 10;
 
